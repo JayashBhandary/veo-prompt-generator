@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 AI Video JSON Prompt Generator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Veo 3 AI Video JSON Prompt Generator</h1>
+        </header>
+
+        <main>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="subject">Main Subject</label>
+                    <input type="text" id="subject" placeholder="e.g., A majestic lion, two robots">
+                </div>
+
+                <div class="form-group">
+                    <label for="action">Action</label>
+                    <input type="text" id="action" placeholder="e.g., walking on a beach, having a conversation">
+                </div>
+
+                <div class="form-group">
+                    <label for="setting">Setting / Environment</label>
+                    <input type="text" id="setting" placeholder="e.g., a neon-lit futuristic city, a sun-drenched meadow">
+                </div>
+
+                <div class="form-group">
+                    <label for="visual_style">Visual Style</label>
+                    <select id="visual_style">
+                        <option value="photorealistic">Photorealistic</option>
+                        <option value="cinematic">Cinematic</option>
+                        <option value="anime">Anime</option>
+                        <option value="3d_animation">3D Animation</option>
+                        <option value="claymation">Claymation</option>
+                        <option value="documentary">Documentary</option>
+                        <option value="black_and_white_film">Black and White Film</option>
+                        <option value="watercolor">Watercolor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="camera_shot">Camera Shot</label>
+                    <select id="camera_shot">
+                        <option value="wide_shot">Wide Shot</option>
+                        <option value="medium_shot">Medium Shot</option>
+                        <option value="close_up">Close-Up</option>
+                        <option value="extreme_close_up">Extreme Close-Up</option>
+                        <option value="drone_shot">Drone Shot / Aerial View</option>
+                        <option value="pov_shot">Point of View (POV)</option>
+                        <option value="dutch_angle">Dutch Angle</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="lighting">Lighting / Time of Day</label>
+                    <input type="text" id="lighting" placeholder="e.g., golden hour, moody nighttime, dramatic studio lighting">
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details</label>
+                    <textarea id="details" placeholder="e.g., in slow motion, wearing a top hat, with lens flare"></textarea>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="generateBtn">Generate Prompt</button>
+            </div>
+
+            <div class="output-container">
+                <div class="output-header">
+                    <h2>Generated JSON Prompt</h2>
+                    <button id="copyBtn">Copy to Clipboard</button>
+                </div>
+                <textarea id="json-output"></textarea>
+            </div>
+        </main>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
