@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Veo 3 AI Video Prompt Generator",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "A tool to generate JSON prompts for the Veo 3 AI video model.",
   "permissions": [
     "clipboardWrite"
@@ -9,13 +9,15 @@
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
+    "64": "images/icon64.png",
     "128": "images/icon128.png"
   },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/icon16.png",
-      "48": "images/icon48.png"
+      "48": "images/icon48.png",
+      "128": "images/icon48.png"
     }
   }
 }
